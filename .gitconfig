@@ -1,0 +1,5 @@
+[user]
+	name = Maksymilian Chwałek
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
