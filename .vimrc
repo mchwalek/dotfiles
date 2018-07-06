@@ -3,42 +3,7 @@ scriptencoding utf-8
 " Gotta be first
 set nocompatible
 
-call plug#begin('~/.vim/plugged')
-
-" ----- Making Vim look good ------------------------------------------
-Plug 'altercation/vim-colors-solarized'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-
-" ----- Vim as a programmer's text editor -----------------------------
-Plug 'w0rp/ale'
-Plug 'xolox/vim-misc'
-Plug 'xolox/vim-easytags'
-Plug 'majutsushi/tagbar'
-
-" ----- Working with Git ----------------------------------------------
-Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
-
-" ----- Other text editing features -----------------------------------
-Plug 'Raimondi/delimitMate'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'sheerun/vim-polyglot'
-Plug 'tpope/vim-surround'
-
-Plug 'mileszs/ack.vim'
-Plug 'jlanzarotta/bufexplorer'
-Plug 'tpope/vim-endwise'
-Plug 'adelarsq/vim-matchit'
-Plug '~/.fzf'
-Plug 'junegunn/fzf.vim'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-vinegar'
-Plug 'tpope/vim-dispatch'
-Plug 'thoughtbot/vim-rspec'
-Plug 'Valloric/YouCompleteMe'
-
-call plug#end()
+source ~/.plugins_vimrc
 
 " --- General settings ---
 set backspace=indent,eol,start
