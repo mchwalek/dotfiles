@@ -13,6 +13,7 @@ set number
 set showcmd
 set incsearch
 set hlsearch
+set wildmenu
 
 syntax on
 
