@@ -12,7 +12,6 @@ set ruler
 set number
 set showcmd
 set incsearch
-set hlsearch
 set wildmenu
 
 syntax on
@@ -20,12 +19,11 @@ syntax on
 set mouse=a
 
 " ----- Plugin-Specific Settings --------------------------------------
-
-set t_Co=256
 " ----- altercation/vim-colors-solarized settings -----
 set background=dark
 
 " Set the colorscheme
+let g:solarized_termtrans = 1
 colorscheme solarized
 
 " ----- bling/vim-airline settings -----
