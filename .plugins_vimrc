@@ -21,7 +21,6 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-surround'
 
-Plug 'mileszs/ack.vim'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'tpope/vim-endwise'
 Plug 'adelarsq/vim-matchit'
@@ -32,5 +31,6 @@ Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-dispatch'
 Plug 'thoughtbot/vim-rspec'
 Plug 'zxqfl/tabnine-vim'
+Plug 'jremmen/vim-ripgrep'
 
 call plug#end()
