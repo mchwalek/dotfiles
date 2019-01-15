@@ -48,10 +48,6 @@ let g:easytags_async = 1
 let g:easytags_dynamic_files = 2
 let g:easytags_resolve_links = 1
 
-" ----- majutsushi/tagbar settings -----
-" Open/close tagbar with \b
-nmap <silent> <leader>b :TagbarToggle<CR>
-
 " ----- airblade/vim-gitgutter settings -----
 " Required after having changed the colorscheme
 hi clear SignColumn

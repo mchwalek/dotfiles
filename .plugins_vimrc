@@ -9,7 +9,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'w0rp/ale'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-easytags'
-Plug 'majutsushi/tagbar'
 
 " ----- Working with Git ----------------------------------------------
 Plug 'airblade/vim-gitgutter'
@@ -21,7 +20,6 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-surround'
 
-Plug 'jlanzarotta/bufexplorer'
 Plug 'tpope/vim-endwise'
 Plug 'adelarsq/vim-matchit'
 Plug '~/.fzf'
@@ -30,7 +28,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-dispatch'
 Plug 'thoughtbot/vim-rspec'
-Plug 'zxqfl/tabnine-vim'
 Plug 'jremmen/vim-ripgrep'
+Plug 'OmniSharp/omnisharp-vim'
 
 call plug#end()
