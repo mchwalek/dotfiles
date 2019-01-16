@@ -8,6 +8,7 @@ source ~/.plugins_vimrc
 
 " --- General settings ---
 set backspace=indent,eol,start
+set completeopt=longest,menuone
 set ruler
 set number
 set showcmd
@@ -74,3 +75,25 @@ map <Leader>rf :call RunCurrentSpecFile()<CR>
 map <Leader>rn :call RunNearestSpec()<CR>
 map <Leader>rl :call RunLastSpec()<CR>
 map <Leader>a :Dispatch rake<CR>
+
+" Fetch semantic type/interface/identifier names on BufEnter and highlight them
+let g:OmniSharp_highlight_types = 1
+
+augroup omnisharp_commands
+    autocmd!
+
+    autocmd FileType cs nnoremap <buffer> <Leader>os <Nop>
+    autocmd FileType cs nnoremap <buffer> <Leader>oscf :OmniSharpCodeFormat<CR>
+    autocmd FileType cs nnoremap <buffer> <Leader>osfm :OmniSharpFindMembers<CR>
+    autocmd FileType cs nnoremap <buffer> <Leader>osfs :OmniSharpFindSymbol<CR>
+
+    " The following commands are contextual, based on the cursor position.
+    autocmd FileType cs nnoremap <buffer> <Leader>osfd :OmniSharpGotoDefinition<CR>
+    autocmd FileType cs nnoremap <buffer> <Leader>ospd :OmniSharpPreviewDefinition<CR>
+
+    autocmd FileType cs nnoremap <buffer> <Leader>osfi :OmniSharpFindImplementations<CR>
+    autocmd FileType cs nnoremap <buffer> <Leader>osfu :OmniSharpFindUsages<CR>
+
+    autocmd FileType cs nnoremap <buffer> <Leader>osdc :OmniSharpDocumentation<CR>
+    autocmd FileType cs nnoremap <buffer> <Leader>osrn :OmniSharpRename<CR>
+augroup END
